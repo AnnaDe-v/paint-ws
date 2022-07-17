@@ -1,0 +1,32 @@
+@import './variables';
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 3px 7px #afacac;
+
+  &__button {
+    height: 45px;
+    width: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: cover;
+    margin-left: 20px;
+  }
+  .brush {
+    background: url('../assets/img/brush.png') no-repeat center center;
+  }
+  .rectangle {
+    background: url('../assets/img/rectangle.png') no-repeat center center;
+  }
+}
+
+.setting-bar {
+  top: 45px;
+  z-index: 3;
+}
