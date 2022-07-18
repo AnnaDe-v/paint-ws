@@ -6,6 +6,7 @@ const Toolbar = () => {
         <div className='toolbar'>
             <button className='toolbar__button brush'></button>
             <button className='toolbar__button rectangle'></button>
+            <button className='toolbar__button eraser'></button>
         </div>
     );
 };
