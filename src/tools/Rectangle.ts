@@ -17,20 +17,15 @@ export default class Brush extends Tool {
         this.mouseDown = false
     }
     mouseDown(e) {
-        this.mouseDown = true
-        this.ctx.beginPath()
-        this.ctx.moveTo(e.pageX - e.target.offsetLeft, e.pageY - e.target.offsetTop)
+
     }
 
     mouseMove(e: any): any {
-        if(this.mouseDown) {
-            this.draw(e.pageX - e.target.offsetLeft, e.pageY - e.target.offsetTop)
-        }
+
     }
 
-    draw(x: number, y: number) {
-        this.ctx.lineTo(x, y)
-        this.ctx.stroke()
+    draw(x: number, y: number, h: number, w: number) {
+
     }
 
 

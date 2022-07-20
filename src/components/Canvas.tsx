@@ -3,17 +3,10 @@ import '../styles/canvas.scss'
 import canvasState from "../store/canvasState";
 import toolState from '../store/toolState';
 import Brush from '../tools/Brush';
-import {
-    LegacyRef
-} from "../../../../Program Files/JetBrains/WebStorm 2021.3.1/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react";
 
 const Canvas = () => {
-
     canvas: HTMLCanvasElement
-
     const canvasRef = useRef<any>()
-
-
 
     useEffect(() => {
         canvasState.setCanvas(canvasRef.current)
