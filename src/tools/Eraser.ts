@@ -31,6 +31,7 @@ export default class Eraser extends Tool {
     draw(x: number, y: number) {
         this.ctx.lineTo(x, y)
         this.ctx.strokeStyle = 'white'
+        this.ctx.lineWidth = 10
         this.ctx.stroke()
     }
 
